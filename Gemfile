@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.1"
 
 gem "cssbundling-rails"
+gem "devise"
 gem "jsbundling-rails"
 gem "pg"
 gem "propshaft"
