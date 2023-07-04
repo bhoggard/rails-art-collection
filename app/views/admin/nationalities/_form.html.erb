@@ -1,4 +1,4 @@
-<%= form_with(model: nationality) do |form| %>
+<%= form_with(model: [:admin, nationality]) do |form| %>
   <% if nationality.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(nationality.errors.count, "error") %> prohibited this nationality from being saved:</h2>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :nationalities
-  devise_for :users
   root "pages#index"
+  devise_for :users
+  namespace :admin do
+    resources :nationalities
+  end
 end

@@ -6,9 +6,9 @@
   <% @nationalities.each do |nationality| %>
     <%= render nationality %>
     <p>
-      <%= link_to "Show this nationality", nationality %>
+      <%= link_to "edit this nationality", edit_admin_nationality_path(nationality) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New nationality", new_nationality_path %>
+<%= link_to "New nationality", new_admin_nationality_path %>
